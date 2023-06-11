@@ -2,13 +2,18 @@
 
     require_once "vendor/autoload.php" ;
 
+    use berdysh_dev\BdavRplsParser ;
+
     class BdavRplsParserTest extends PHPUnit\Framework\TestCase{
 
+        BdavRplsParser  $ctx ;
 
+        function setUp(){
+            $this->ctx = new BdavRplsParser();
+        }
 
         public function testAll(){
-            echo "\nTest.!!!\n" ;
-            $this->assertTrue(TRUE) ;
+            $this->assertTrue($this->ctx->SelfTest()) ;
         }
     }
 
