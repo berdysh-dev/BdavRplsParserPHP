@@ -8,8 +8,8 @@
 
         protected BdavRplsParser  $ctx ;
 
-        protected function setUp(){
-            $this->ctx = new BdavRplsParser();
+        protected function setUp() :void{
+            $this->ctx = new BdavRplsParser() ;
         }
 
         public function testAll(){
