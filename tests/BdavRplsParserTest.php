@@ -9,11 +9,11 @@
         protected BdavRplsParser  $ctx ;
 
         protected function setUp() :void{
-            echo "\n" ;
             $this->ctx = new BdavRplsParser() ;
         }
 
         public function testAll(){
+            echo "\n" ;
             $this->assertTrue($this->ctx->SelfTest()) ;
         }
     }
