@@ -6,9 +6,9 @@
 
     class BdavRplsParserTest extends PHPUnit\Framework\TestCase{
 
-        BdavRplsParser  $ctx ;
+        protected BdavRplsParser  $ctx ;
 
-        function setUp(){
+        protected function setUp(){
             $this->ctx = new BdavRplsParser();
         }
 
